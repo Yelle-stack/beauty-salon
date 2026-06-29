@@ -339,5 +339,7 @@ header {
 .about-box:hover .about-overlay {
     clip-path: circle(70.7% at 50% 50%);
     transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
-
+}
+.services .heading {
+    
 }
