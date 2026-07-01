@@ -467,3 +467,25 @@ header {
 .t-box p {
     font-size: 1.02rem;
 }
+/* Footer */
+.footer {
+    background: var(--text-alter-color);
+    color: #f6f6f6;
+    border-top: 2px solid #d1a670;
+}
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+.footer-container .logo {
+    color: var(--bg-color);
+    margin-bottom: 1rem;
+}
+.footer-container .logo:hover {
+    color: var(--bg-color);
+}
+.footer-container .footer-box {
+    display: flex;
+    flex-direction: column;
+}
