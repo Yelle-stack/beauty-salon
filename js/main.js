@@ -18,3 +18,10 @@ var swiper = new Swiper(".services-content", {
         prevEl: ".swiper-button-prev",
       },
     });
+
+    // Header
+    let header = document.querySelector('header')
+
+    window.addEventListener('scroll', () => {
+        header.classList.toggle('shadow', window.scrollY > 0);
+    });
