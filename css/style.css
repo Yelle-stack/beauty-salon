@@ -56,6 +56,7 @@ header.shadow {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px 0;
 }
 .logo {
     font-size: 1.3rem;
@@ -68,7 +69,7 @@ header.shadow {
     display: flex;
     align-items: center;
     column-gap: 1.5rem;
-    padding: 20px 0;
+    
 }
 .nav-link {
     position: relative;
@@ -530,3 +531,88 @@ header.shadow {
 }
 
 /* Responsive */
+@media (max-width:985px){
+    .container {
+        margin: 0 auto;
+        width: 90%;
+    }
+    .home{
+        min-height: 600px;
+        padding-top: 7rem;
+    }
+    .home-bg{
+        width: 420px;
+        height: 420px;
+        bottom: -150px;
+    }
+}
+@media (max-width:875px) {
+    .nav {
+        padding: 15px 0;
+    }
+     .home-bg{
+        width: 350px;
+        height: 350px;
+        bottom: -154px;
+        transform: translateX(38px);
+    }
+    .service-box {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .testimonial-data {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 864px) {
+    .home-bg {
+        position: unset;
+        transform: translateX(0);
+    }
+    .home-bg::after {
+        top: -1rem;
+        left: -1rem;
+    }
+}
+@media (max-width: 800px) {
+    .nav {
+        padding: 14px 0;
+    }
+    .home-img {
+        display: initial;
+    }
+    .home-bg {
+        display: none;
+    }
+    .home-data {
+        grid-template-columns: 1fr;
+    }
+    .home-img {
+        position: relative;
+        width: 350px;
+        height: 350px;
+        z-index: 2;
+        margin-top: 1.5rem;
+    }
+    .home-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .home-img::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: -1rem;
+        left: -1rem;
+        border: 1px solid var(--main-color);
+        background: transparent;
+        z-index: -1;
+    }
+
+}
